@@ -17,7 +17,7 @@
 <script type="text/javascript" src="js/custom.js"></script>
 </head>
 <!-- Start Body -->
-<body>
+<body onload="initialize();">
 	<!-- Start Menu -->
 	<div class="menubar" data-scroll="true">
 		<a href="#" class="logo"></a>
@@ -47,7 +47,7 @@
                 <b class="rotate color">お届けしたいのは,豊饒と情熱,新川の酒屋です</b></h1>-->
 		</div>
 		<a href="javascript:void(0);" class="scrolldown">
-			<h4>MOER ABOUT US</h4>
+			<h3>MOER ABOUT US</h3>
 			<div data-icon="&#xe017;" class="icon"></div>
 		</a>
 	</div>
@@ -151,45 +151,30 @@
 
 	<div class="content">
 		<div class="mapField">
-			<html lang="ja">
-<style>
-body {
-	margin: 0;
-	line-height: 160%;
-	font-family: arial, sans-serif;
-}
+			<script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+			<script>
+				function initialize() {
+					var latlng = new google.maps.LatLng(35.6767417, 139.781594);
+					var myOptions = {
+						zoom : 17,
+						center : latlng,
+						mapTypeId : google.maps.MapTypeId.ROADMAP
+					};
+					var map = new google.maps.Map(document
+							.getElementById('map_canvas'), myOptions);
 
-html, body, #map_canvas {
-	width: 100%;
-	height: 100%;
-}
-</style>
-<script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
-<script>
-	function initialize() {
-		var latlng = new google.maps.LatLng(35.6767417, 139.781594);
-		var myOptions = {
-			zoom : 17,
-			center : latlng,
-			mapTypeId : google.maps.MapTypeId.ROADMAP
-		};
-		var map = new google.maps.Map(document.getElementById('map_canvas'),
-				myOptions);
+					var image = 'img/icon_imada.png';
+					var lopanMarker = new google.maps.Marker({
+						position : latlng,
+						map : map,
+						icon : image
+					});
+				}
+			</script>
+			<div id="map_canvas"></div>
 
-		var image = 'img/icon_imada.png';
-		var lopanMarker = new google.maps.Marker({
-			position : latlng,
-			map : map,
-			icon : image
-		});
-	}
-</script>
-<body onload="initialize();">
-	<div id="map_canvas"></div>
-</body>
-
-<!-- Clear :) -->
-<div class="clear"></div>
+			<!-- Clear :) -->
+			<div class="clear"></div>
 		</div>
 		<!-- End Content -->
 
@@ -204,9 +189,11 @@ html, body, #map_canvas {
 		<div class="person">
 			<div class="image quotefade">
 				<img src="img/kakuuti.jpg">
-				<div style="border-style: solid; border-width: 1px; padding: 10px 5px 10px 20px;"＞イベント日以外でも店内にて試飲できます。お気軽にどうぞ！
+				<div class="kakuuti">
+					イベント日以外でも店内にて試飲できます。お気軽にどうぞ！
 					<br>
-			日本酒3種 500円   時間：17時～20時</div>
+					日本酒3種 500円 時間：17時～20時
+				</div>
 			</div>
 			<div class="info">
 				<h2></h2>
@@ -219,7 +206,7 @@ html, body, #map_canvas {
 					<br>
 				</p>
 				<br>
-				<h7>交通案内</h7>
+				<h6>交通案内</h6>
 				<p>
 					東京メトロ 茅場町駅 1番出口 徒歩3分
 					<br>
@@ -228,7 +215,7 @@ html, body, #map_canvas {
 					「東京」「日本橋」「宝町」も徒歩圏内です
 				</p>
 				<br>
-				<h7>株式会社 今田商店</h7>
+				<h6>株式会社 今田商店</h6>
 				<p>
 					104-0033 東京都中央区新川1－10－10
 					<br>
@@ -251,12 +238,12 @@ html, body, #map_canvas {
 
 	<!-- Clear :) -->
 	<div class="clear"></div>
-	</div>
+
 	<!-- End Content -->
 
 	<footer class="footer">
-		<a href="http://ninetofive.me">
-			<h6>© Copyright 2017 | Imada Shouten Co., LTD</h6>
+		<a href="#">
+			<span class="copyright">© Copyright 2017 | Imada Shouten Co., LTD</span>
 		</a>
 	</footer>
 

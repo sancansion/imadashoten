@@ -111,14 +111,14 @@ h2 {
 	text-decoration: none;
 	font-size: 16px;
 }
-h3 {
+/* h3 {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #0d387e;
 	text-decoration: none;
 	font-size: 18px;
-}
-h4 {
+} */
+h3 {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: bold; 
 	line-height: 1.6em;
@@ -134,14 +134,9 @@ h5 {
 	text-decoration: none;
 	font-size: 14px;
 }
+
+
 h6 {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	line-height: 1.6em;
-	color: #454544;
-	text-decoration: none;
-	font-size: 12px;
-}
-h7 {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: bold; 
 	line-height: 1.6em;
@@ -149,6 +144,16 @@ h7 {
 	text-decoration: none;
 	font-size: 14px;
 }
+
+.copyright {
+ font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: #FFF;
+	line-height: 50px;
+	text-decoration: none;
+    font-size: 12px;
+/* 	background-color: #272727; */
+}
+
 
 
 .hidden {
@@ -450,11 +455,6 @@ footer.main h5.twitter {
 	line-height: 90px;
 	background-color: #343434;
 }
-footer.main h6.copyright {
-	color: #FFF;
-	line-height: 50px;
-	background-color: #272727;
-}
 
 /******************************************************************
 	Home Page
@@ -683,3 +683,13 @@ a.socialicon.dribbble:hover {
 /******************************************************************
 	TOP IMAGE
 ******************************************************************/
+
+/* map */
+html, body, #map_canvas { width: 100%; height: 100%; }
+
+/* kakuuti*/
+.kakuuti {
+	border-style: solid;
+	border-width: 1px;
+	padding: 10px 5px 10px 20px;
+}
