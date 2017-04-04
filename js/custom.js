@@ -37,16 +37,17 @@ $(document).ready(function() {
 	});
 
 	// Menu Scroll Hide
-	var nav = $('.menubar');
-	var scroll = $('.menubar').attr('data-scroll');
-	$(function(){
-		$('.menubar').data('size','big');
-		if (scroll == 'false') {
-			nav.css({
-				marginTop:'0px'
-			});
-		};
-	});
+//	var nav = $('.menubar');
+//	var scroll = $('.menubar').attr('data-scroll');
+//	$(function(){
+//		$('.menubar').data('size','big');
+//		if (scroll == 'false') {
+//			nav.css({
+//				marginTop:'0px'
+//			});
+//		};
+//	});
+	
 	$(window).scroll(function(){
 		if ($('body').scrollTop() > 0 && scroll == 'true') {
 			if (nav.data('size') == 'big') {
