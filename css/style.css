@@ -630,7 +630,7 @@ html, body, #map_canvas {
 
 @media ( max-width : 480px) {
 	.facebook{
-		padding-left:35px;
+		/* padding-left:35px; */
 	}
 }
 
