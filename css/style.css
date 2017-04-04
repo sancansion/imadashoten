@@ -250,7 +250,7 @@ div.icon {
 }
 
 .top-slie{
-	
+	margin-top:120px;
 }
 .rslides {
   position: relative;
@@ -311,72 +311,129 @@ a.scrolldown {
 /******************************************************************
 	Menu
 ******************************************************************/
+@media ( min-width : 841px) {
+	.menubar {
+		position: fixed;
+		top: 0px;
+		height: 80px;
+		width: 100%;
+		z-index: 9999;
+		background-color: rgba(11, 47, 128, 1);
+		margin-top: -80px;
+		-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	}
+	a.logo {
+		float: left;
+		display: block;
+		width: 380px;
+		height: 70px;
+		background-image: url(../img/logo.png);
+		background-repeat: no-repeat;
+		margin: 10px 20px;
+	}
+	ul.mainmenu {
+		font-family: "Open Sans", Helvetica, Arial, sans-serif;
+		float: right;
+		margin: 20px 40px 0px 40px;
+		text-transform: uppercase;
+		font-weight: 300;
+		vertical-align: middle;
+	}
+	ul.mainmenu li {
+		cursor: pointer;
+		display: inline-block;
+		margin: 5px 10px;
+	}
+	ul.mainmenu li.shop-link {
+		cursor: pointer;
+		display: inline-block;
+		padding: 10px 5px 10px 35px;
+		border: 1px solid #FFF;
+		background: url(../img/cart.png) left center no-repeat;
+	}
+	ul.mainmenu li.shop-link img {
+		padding-left: 5px;
+	}
+	ul.mainmenu li a {
+		font-size: 14px;
+		color: #FFF;
+		font-weight: bold;
+		-webkit-transition: color 400ms ease;
+		-moz-transition: color 400ms ease;
+		-o-transition: color 400ms ease;
+		-ms-transition: color 400ms ease;
+		transition: color 400ms ease;
+	}
+	ul.mainmenu li:hover a {
+		color: #FFF;
+	}
+	ul.mainmenu li.active a {
+		font-weight: bold;
+		/* color: #0d387e; */
+	}
+}
+
+ 
+/* smartPhone */
+@media screen and (max-width: 840px) {
 .menubar {
-	position: fixed;
-	top: 0px;
-	height: 80px;
-	width: 100%;
-	z-index: 9999;
-	background-color: rgba(11,47,128,1);
-	margin-top: -80px;
-	-moz-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-}
-
-a.logo {
-	float: left;
-	display: block;
-	width: 380px;
-	height: 70px;
-	background-image: url(../img/logo.png);
-	background-repeat: no-repeat;
-	margin: 10px 20px;
-}
-ul.mainmenu {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	float: right;
-	margin: 20px 40px 0px 40px;
-	text-transform: uppercase;
-	font-weight: 300;
-	vertical-align:middle;
-}
-ul.mainmenu li {
-	cursor: pointer;
-	display: inline-block;
-	margin:5px 10px;
-}
-
-ul.mainmenu li.shop-link{
-	cursor: pointer;
-	display: inline-block;
-	padding: 10px 5px 10px 35px;
-	border:1px solid #FFF;
-    background: url(../img/cart.png) left center no-repeat;
-}
-
-ul.mainmenu li.shop-link img{
-padding-left:5px;
-}
-
-
-
-ul.mainmenu li a {
-	font-size: 14px;
-	color:#FFF;
-	font-weight:bold;
-	-webkit-transition: color 400ms ease;
-	-moz-transition: color 400ms ease;
-	-o-transition: color 400ms ease;
-	-ms-transition: color 400ms ease;
-	transition: color 400ms ease;
-}
-ul.mainmenu li:hover a {
-		color:#FFF;
-}
-ul.mainmenu li.active a {
-	font-weight: bold;
-	/* color: #0d387e; */
+	 white-space: nowrap;
+		position: fixed;
+		top: 0px;
+		height: 80px;
+		width: 100%;
+		z-index: 9999;
+		background-color: rgba(11, 47, 128, 1);
+		margin-top: -80px;
+		-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	}
+	a.logo {
+		display: none;
+	}
+	ul.mainmenu {
+		font-family: "Open Sans", Helvetica, Arial, sans-serif;
+		text-align:center;
+		margin: 20px;
+		text-transform: uppercase;
+		font-weight: 300;
+		vertical-align: middle;
+	}
+	ul.mainmenu li {
+		cursor: pointer;
+		display: inline-block;
+		margin: 5px 10px;
+	}
+	ul.mainmenu li.shop-link {
+		cursor: pointer;
+		display: inline-block;
+		padding: 10px 5px 10px 35px;
+		border: 1px solid #FFF;
+		background: url(../img/cart.png) left center no-repeat;
+	}
+	ul.mainmenu li.shop-link img {
+		padding-left: 5px;
+	}
+	ul.mainmenu li a {
+		font-size: 14px;
+		color: #FFF;
+		font-weight: bold;
+		-webkit-transition: color 400ms ease;
+		-moz-transition: color 400ms ease;
+		-o-transition: color 400ms ease;
+		-ms-transition: color 400ms ease;
+		transition: color 400ms ease;
+	}
+	ul.mainmenu li:hover a {
+		color: #FFF;
+	}
+	ul.mainmenu li.active a {
+		font-weight: bold;
+		/* color: #0d387e; */
+	}
 }
 
 /******************************************************************
