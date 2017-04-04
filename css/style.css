@@ -235,12 +235,15 @@ div.icon {
 	width: 200%;
 	height: 200%;
 }
+
 .home.hero {
 	background-image: url(../img/home_bgp2.png);
-    background-repeat:no-repeat;
-    background-position-y: 100px; 
-    background-position-x: center;
-    background-attachment:fixed;
+	background-repeat: no-repeat;
+	background-position-y: 100px;
+	background-position-x: center;
+	background-attachment: fixed;
+	-moz-background-size: contain;
+	background-size: contain;
 }
 
 .herowrapper {
