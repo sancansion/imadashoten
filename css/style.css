@@ -238,7 +238,8 @@ div.icon {
 .home.hero {
 	background-image: url(../img/home_bgp2.png);
     background-repeat:no-repeat;
-    background-position: center; 
+    background-position-y: 100px; 
+    background-position-x: center;
     background-attachment:fixed;
 }
 
