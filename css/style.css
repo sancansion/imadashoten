@@ -249,32 +249,34 @@ div.icon {
 
 }
 
-.top-slie{
-	margin-top:100px;
+.top-slie {
+	margin-top: 100px;
 }
+
 .rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  }
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
 
 .rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-  }
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
 
 .rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
+	position: relative;
+	display: block;
+	float: left;
+}
+
 @media ( min-width : 961px) {
 .rslides img {
 		margin: 0 auto;
@@ -612,9 +614,9 @@ div.section.full li:last-child  {
 ******************************************************************/
 div.container {
 	width: 100%;
-	margin:30px auto;
-  padding-left: 15px;
-  padding-right: 15px;
+	margin: 30px auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 /* div.container div.image {
 	width: 340px;
@@ -631,8 +633,6 @@ div.container div.info {
 div.container div.image img {
 	position: absolute;
 } */
-
-
 .container:before, .container:after {
   content: " ";
   display: table;
@@ -689,18 +689,17 @@ html, body, #map_canvas { width: 100%; height: 100%; }
 	letter-spacing:2px;
 }
 
-@media ( min-width : 860px) {
+@media ( min-width : 861px) {
 	.box2 {
 		float: left;
 		width: 49%;
-		border:solid 1px;
 	}
 	.box3 {
 		float: left;
 		width: 33%;
+		padding-top:100px;
+		text-align:center;
 	}
-	
-
 }
 
 
@@ -708,8 +707,22 @@ html, body, #map_canvas { width: 100%; height: 100%; }
 	.box2 , .box3 {
 		margin-top:30px;
 		margin-bottom:20px;
+		text-align:center;
+	}
+}
+
+@media ( min-width : 861px) {
+.sns-erea {
+		background-image: url(../img/back.jpg) ;
+		height:812px;
+	}
+}
+
+@media ( max-width : 860px) {
+.sns-erea {
+		background-image: url(../img/back.jpg);
+		background-position: right bottom;
 	}
 }
 
 
-}
