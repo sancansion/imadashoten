@@ -48,22 +48,22 @@ $(document).ready(function() {
 //		};
 //	});
 	
-	$(window).scroll(function(){
-		if ($('body').scrollTop() > 0 && scroll == 'true') {
-			if (nav.data('size') == 'big') {
-				nav.data('size','small').stop().animate({
-					marginTop:'0px'
-				}, 300);
-			}
-		} else {
-			if (nav.data('size') == 'small' && scroll == 'true') {
-				nav.data('size','big').stop().animate({
-					marginTop:'-80px'
-				}, 300);
-			}
-			
-		}
-	});
+//	$(window).scroll(function(){
+//		if ($('body').scrollTop() > 0 && scroll == 'true') {
+//			if (nav.data('size') == 'big') {
+//				nav.data('size','small').stop().animate({
+//					marginTop:'0px'
+//				}, 300);
+//			}
+//		} else {
+//			if (nav.data('size') == 'small' && scroll == 'true') {
+//				nav.data('size','big').stop().animate({
+//					marginTop:'-80px'
+//				}, 300);
+//			}
+//			
+//		}
+//	});
 
 	// Text Rotator
 	$('.rotate').each(function(){
