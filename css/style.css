@@ -38,16 +38,8 @@ body {
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
 
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 html, body {
 	width: 100%;
 	height: 100%;
@@ -127,13 +119,13 @@ h3 {
 	font-size: 16px;
     text-align: center;
 }
-h5 {
+/* h5 {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 14px;
-}
+} */
 
 
 h6 {
@@ -162,12 +154,7 @@ h6 {
 .block {
 	display: block;
 }
-.left {
-	float: left;
-}
-.right {
-	float: right;
-}
+
 .clear {
 	clear: both;
 }
@@ -200,37 +187,9 @@ h6 {
 	margin-left: auto;
 	margin-right: auto;
 }
-.content.sidebar {
-	width: 659px;
-	float: left;
-	margin-top: 40px;
-	border-right: 1px solid #e7e7e7;
-}
-.sidebar {
-	width: 300px;
-	float: right;
-}
-.blockquote {
 
 
-}
 
-div.pagetitle {
-	width: 100%;
-	background-color: #0d387e;
-	height: 120px;
-}
-div.pagetitle h1 {
-	line-height: 120px;
-	color: #FFF;
-	text-align: center;
-}
-p.main {
-	font-size: 15px;
-	text-align: center;
-	margin: 50px auto;
-	font-weight: 400;
-}
 div.section.divider {
 	width: 100%;
 	height: 40px;
@@ -239,10 +198,7 @@ div.section.divider {
 	margin-top: 100px;
 	margin-bottom: 40px;
 }
-div.section.divider.single {
-	border-top: 1px solid #0d387e;
-	margin-top: 150px;
-}
+
 div.section.divider h2 {
 	font-weight: 400;
 	color: #0d387e;
@@ -271,10 +227,6 @@ div.icon {
 	font-size: 80px;
 	color: #0d387e;
 }
-.front div.icon {
-	line-height: 210px;
-	text-align: center;
-}
 
 /******************************************************************
 	Hero Images
@@ -295,16 +247,7 @@ div.icon {
 
 
 }
-.herowrapper h1 {
-	text-align: center;
-	color: #FFF;
-	font-size: 40px;
-	font-weight: 300;
-}
-.herowrapper b {
-	background-color: rgba(255, 255, 255, 0.8);
-	padding: 0px 5px;
-}
+
 a.scrolldown {
 	display: block;
 	width: 100%;
@@ -318,37 +261,15 @@ a.scrolldown {
 	font-size: 20px;
 	text-align: center;
 }
-.scrolldown h3 {
+/* .scrolldown h3 {
 	text-align: center;
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #FFF;
 	font-weight: 300;
-}
+} */
 
-/******************************************************************
-	Sidebar
-******************************************************************/
-.widget {
-	width: 260px;
-	margin: 50px 30px;
-	margin-bottom: 0px;
-	float: left;
-}
-.widget a {
-	font-size: 12px;
-}
-.widget li {
-	margin-top: 4px;
-}
-.widget.twitter a.tweet {
-	float: left;
-	margin-top: 20px;
-	min-height: 30px;
-	background-image: url(../img/twitterwidgeticon.png);
-	background-repeat: no-repeat;
-	padding-left: 35px;
-}
+
 
 /******************************************************************
 	Menu
@@ -365,9 +286,7 @@ a.scrolldown {
 	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
-.menubar.alt {
-	background-color: #f6f6f6;
-}
+
 a.logo {
 	float: left;
 	display: block;
@@ -439,22 +358,6 @@ ul.mainmenu li.active a {
 /******************************************************************
 	Footer
 ******************************************************************/
-footer.main {
-	height: 195px;
-	width: 100%;
-	margin-top: 60px;
-	text-align: center;
-}
-footer.main div.twitter {
-	width: 100%;
-	padding-bottom: 30px;
-	background-color: #343434;
-}
-footer.main h5.twitter {
-	color: #FFF;
-	line-height: 90px;
-	background-color: #343434;
-}
 
 /******************************************************************
 	Home Page
@@ -478,12 +381,7 @@ div.section.block {
 	float: left;
 	cursor: pointer;
 }
-div.section.block h5 {
-	margin-top: 15px;
-}
-div.section.block h6 {
-	color: #838282;
-}
+
 div.section.block img {
 	width: 220px;
 	height: 185px;
@@ -518,102 +416,46 @@ div.section.block .hover.content {
 	border-bottom: 3px solid #0d387e;
 	margin-top: 0px;
 }
-div.section.block .hover.content h2 {
-	padding-top: 40px;
-	font-size: 40px;
-	font-weight: 400;
-	color: #FFF;
-}
-div.section.block .hover.content h5 {
-	font-weight: 400;
-	color: #FFF;
-}
-div.section.block .hover.content h6 {
-	font-weight: 400;
-	color: #FFF;
-}
+
 div.section.full li:last-child  {
 	margin-right: 0px;
 }
-div.section.block.blog {
-	text-align: left;
-	height: 220px;
-}
-div.section.block.blog .hover {
-	left: -10px;
-}
-div.section.block.blog img {
-	height: 220px;
-}
-div.section.block h2 {
-	text-align: center;
-}
-div.section.block.blog h5, div.section.block.blog h6, div.section.block.blog a {
-	margin-left: 20px;
-}
-div.section.block.blog .content h5 {
-	margin-top: 8px;
-}
-div.section.block.blog .content {
-	height: 220px;
-}
-div.section.block.blog .hover {
-	height: 217px;
-}
-a.readmore {
-	display: block;
-	margin-top: 5px;
-}
-div.section.block.blog .hover a.readmore {
-	color: #FFF;
-}
+
 
 /******************************************************************
 	About Us
 ******************************************************************/
-div.person {
+div.container {
 	width: 960px;
+	  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-div.person div.image {
+/* div.container div.image {
 	width: 340px;
 	height: 250px;
 	float: left;
 	margin-bottom: 40px;
     margin-right: 40px;
 }
-div.person div.info {
+div.container div.info {
 	width: 520px;
 	float: right;
 	padding: 0px 30px;
 }
-div.person div.image img {
+div.container div.image img {
 	position: absolute;
+} */
+
+.container:before, .container:after {
+  content: " ";
+  display: table;
 }
-div.quotehover {
-	cursor: pointer;
-	display: none;
-	position: relative;
-	top: 0px;
-	left: 0px;
-	width: 340px;
-	height: 250px;
-	background-image: url(../img/quotehover.png);
-	background-repeat: no-repeat;
-	background-color: rgba(96, 147, 231, 0.6);
+.container:after {
+  clear: both;
 }
 
-div.quotehover h5, div.quotehover h6 {
-	color: #FFF;
-	text-align: center;
-	padding: 0px 20px;
-}
-div.quotehover h5 {
-	padding-top: 100px;
-	font-size: 14px;
-}
-div.quotehover h6 {
-	font-size: 10px;
-}
 a.socialicon {
 	background-image: url(../img/socialicons.png);
 	background-repeat: no-repeat;
@@ -666,18 +508,12 @@ a.socialicon.dribbble:hover {
 	line-height: 50px;
 	background-color: #0d387e;
 }
-.footer h6 {
-	line-height: 50px;
-	color: #FFF;
-}
 
 /******************************************************************
 	Mobile
 ******************************************************************/
 @media all and (max-width: 960px) {
-	ul.portfolio li {
-		width: 50%;
-	}
+
 }
 
 /******************************************************************
@@ -689,7 +525,35 @@ html, body, #map_canvas { width: 100%; height: 100%; }
 
 /* kakuuti*/
 .kakuuti {
-	border-style: solid;
-	border-width: 1px;
+	border: solid 1px #0B2F80;
+	font-size:12px;
+	line-height:20px;
 	padding: 10px 5px 10px 20px;
+	width:350px;
+	text-align:center;
+	color:#0B2F80;
 }
+
+.wide-text{
+	letter-spacing:2px;
+}
+
+@media ( min-width : 860px) {
+	.box2 {
+		float: left;
+		width: 50%;
+	}
+	.box3 {
+		float: left;
+		width: 33%;
+	}
+}
+
+
+@media ( max-width : 860px) {
+	.box2 , .box3 {
+		margin-top:30px;
+		margin-bottom:20px;
+	}
+}
+

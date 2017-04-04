@@ -18,6 +18,28 @@
 </head>
 <!-- Start Body -->
 <body onload="initialize();">
+
+	<!-- Start facebook js -->
+	<script>
+		window.twttr = (function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+			if (d.getElementById(id))
+				return t;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https://platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore(js, fjs);
+
+			t._e = [];
+			t.ready = function(f) {
+				t._e.push(f);
+			};
+
+			return t;
+		}(document, "script", "twitter-wjs"));
+	</script>
+
+	<!-- End facebook js -->
 	<!-- Start Menu -->
 	<div class="menubar" data-scroll="true">
 		<a href="#" class="logo"></a>
@@ -186,16 +208,18 @@
 	<div class="content">
 
 		<!-- Start Person Block -->
-		<div class="person">
-			<div class="image quotefade">
-				<img src="img/kakuuti.jpg">
+		<div class="container">
+			<div class="box2 image quotefade">
+				<img src="img/kakuuti_img.jpg">
 				<div class="kakuuti">
 					イベント日以外でも店内にて試飲できます。お気軽にどうぞ！
 					<br>
-					日本酒3種 500円 時間：17時～20時
+					<span class="wide-text"> 日本酒3種 500円 時間：17時～20時 </span>
 				</div>
 			</div>
-			<div class="info">
+
+
+			<div class="box2 info">
 				<h2></h2>
 				<p>
 					江戸時代、新川は酒問屋の集まる江戸最大の酒市場でした。
@@ -223,12 +247,33 @@
 					<br>
 					月-金 8:00-19:00 土 お問合せください 日祝定休
 				</p>
-				<a href="#" class="socialicon linkedin"></a>
-				<a href="#" class="socialicon facebook"></a>
-				<a href="#" class="socialicon twitter"></a>
-				<a href="#" class="socialicon dribbble"></a>
-				<a href="#" class="socialicon pinterest"></a>
+
+				<a href="https://imadashouten.buyshop.jp/"> </a>
 			</div>
+		</div>
+
+
+
+		<div class="container">
+			<div class="box3"></div>
+			<div class="box3">
+
+				<a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/imada1923" data-lang="ja"> </a>
+
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<script src="//platform.twitter.com/widgets.js" async="" charset="utf-8"></script>
+
+
+			</div>
+
+			<div class="box-3">
+				<iframe
+					src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fimadashouten%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+					width="300" height="500" style="border: none; overflow: hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			</div>
+
+
+
 		</div>
 		<!-- Clear :) -->
 		<div class="clear"></div>
