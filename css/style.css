@@ -280,7 +280,7 @@ a.scrolldown {
 	height: 80px;
 	width: 100%;
 	z-index: 9999;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(11,47,128,1);
 	margin-top: -80px;
 	-moz-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
@@ -290,26 +290,44 @@ a.scrolldown {
 a.logo {
 	float: left;
 	display: block;
-	width: 120px;
-	height: 30px;
+	width: 380px;
+	height: 70px;
 	background-image: url(../img/logo.png);
-	margin: 27px 0px 0px 40px;
+	background-repeat: no-repeat;
+	margin: 10px 20px;
 }
 ul.mainmenu {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	float: right;
-	margin: 0px 40px 0px 0px;
+	margin: 20px 40px 0px 40px;
 	text-transform: uppercase;
 	font-weight: 300;
+	vertical-align:middle;
 }
 ul.mainmenu li {
 	cursor: pointer;
 	display: inline-block;
-	padding: 30px 10px 31px 10px;
+	margin:5px 10px;
 }
+
+ul.mainmenu li.shop-link{
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px 5px 10px 35px;
+	border:1px solid #FFF;
+    background: url(../img/cart.png) left center no-repeat;
+}
+
+ul.mainmenu li.shop-link img{
+padding-left:5px;
+}
+
+
+
 ul.mainmenu li a {
-	font-size: 12px;
-	color: #838282;
+	font-size: 14px;
+	color:#FFF;
+	font-weight:bold;
 	-webkit-transition: color 400ms ease;
 	-moz-transition: color 400ms ease;
 	-o-transition: color 400ms ease;
@@ -317,11 +335,11 @@ ul.mainmenu li a {
 	transition: color 400ms ease;
 }
 ul.mainmenu li:hover a {
-	color: #0d387e;
+		color:#FFF;
 }
 ul.mainmenu li.active a {
 	font-weight: bold;
-	color: #0d387e;
+	/* color: #0d387e; */
 }
 
 /******************************************************************
@@ -426,9 +444,8 @@ div.section.full li:last-child  {
 	About Us
 ******************************************************************/
 div.container {
-	width: 960px;
-	  margin-right: auto;
-  margin-left: auto;
+	width: 1200px;
+	  margin:30px auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -557,3 +574,5 @@ html, body, #map_canvas { width: 100%; height: 100%; }
 	}
 }
 
+
+}
