@@ -628,9 +628,11 @@ div.container div.info {
 	text-align:left;
 	padding-left:15px;
 }
-/* div.container div.image img {
-	position: absolute;
-}  */
+
+div.container div.info img {
+	margin:20px auto;
+	width:90%;
+}  
 .container:before, .container:after {
   content: " ";
   display: table;
