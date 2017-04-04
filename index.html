@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
 <title>今田商店 Imadashouten Inc.</title>
 <!-- Load CSS -->
 <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -23,8 +25,25 @@
 		$(".rslides").responsiveSlides();
 	});
 </script>
-
-
+<script>
+$(function () {
+    var windowWidth = $(window).width();
+    var htmlStr = $('#pageplugin').html();
+    var timer = null;
+    $(window).on('resize',function() {
+        var resizedWidth = $(window).width();
+        if(windowWidth != resizedWidth && resizedWidth < 500) {
+            clearTimeout(timer);
+            timer = setTimeout(function() {
+                $('#pageplugin').html(htmlStr);
+                window.FB.XFBML.parse();
+　　　　　　　　　　　//window.FB.XFBML.parse()で再レンダリングします。
+                var windowWidth = $(window).width();
+            }, 500);
+        }
+    });
+});
+</script>
 </head>
 <!-- Start Body -->
 <body onload="initialize();">
@@ -295,13 +314,13 @@
 	<div class="container sns-erea">
 		<div class="box3">&nbsp</div>
 		<div class="box3">
-			<a class="twitter-timeline" data-width="350" data-height="500" href="https://twitter.com/imada1923" data-lang="ja"> </a>
+			<a class="twitter-timeline"  width="90%"  data-height="500" href="https://twitter.com/imada1923" data-lang="ja"> </a>
 		</div>
 
-		<div class="box3 facebook">
+		<div class="box3 facebook" id="pageplugin">
 			<iframe
 				src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fimadashouten%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-				width="400" height="500" style="text-align: center; border: none; overflow: hidden" scrolling="no" frameborder="0"
+				width="90%" height="500" style="text-align: center; border: none; overflow: hidden" scrolling="no" frameborder="0"
 				allowTransparency="true"></iframe>
 		</div>
 	</div>
