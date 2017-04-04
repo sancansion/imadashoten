@@ -14,12 +14,22 @@
 <!-- Load MixItUup js -->
 <script type="text/javascript" src="js/jquery.mixitup.js"></script>
 <!-- Load js -->
+
+<script type="text/javascript" src="js/responsiveslides.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+
+<script>
+	$(function() {
+		$(".rslides").responsiveSlides();
+	});
+</script>
+
+
 </head>
 <!-- Start Body -->
 <body onload="initialize();">
 
-	<!-- Start facebook js -->
+	<!-- Start Twitter js -->
 	<script>
 		window.twttr = (function(d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
@@ -39,7 +49,7 @@
 		}(document, "script", "twitter-wjs"));
 	</script>
 
-	<!-- End facebook js -->
+	<!-- End Twitter js -->
 	<!-- Start Menu -->
 	<div class="menubar" data-scroll="true">
 		<a href="#" class="logo"></a>
@@ -59,31 +69,57 @@
 
 	<!-- Start Home -->
 	<a class="scroll" id="home"></a>
-	<div class="home hero">
-		<div class="overlay"></div>
-		<div class="herowrapper">
-			<!-- 	<h1>
-                <b class="rotate color">お届けしたいのは,豊饒と情熱,新川の酒屋です</b></h1>-->
-		</div>
-		<a href="javascript:void(0);" class="scrolldown">
-			<h3>MOER ABOUT US</h3>
-			<div data-icon="&#xe017;" class="icon"></div>
-		</a>
-	</div>
-	<!-- End Home -->
+	<div class="top-slie">
+		<ul class="rslides">
+			<li>
+				<img src="images/top01.png" alt="">
+			</li>
+			<li>
+				<img src="images/top02.png" alt="">
+			</li>
+			<li>
+				<img src="images/top03.png" alt="">
+			</li>
+			<li>
+				<img src="images/top04.png" alt="">
+			</li>
+			<li>
+				<img src="images/top05.png" alt="">
+			</li>
+			<li>
+				<img src="images/top06.png" alt="">
+			</li>
+			<li>
+				<img src="images/top07.png" alt="">
+			</li>
+			<li>
+				<img src="images/top033.png" alt="">
+			</li>
+		</ul>
 
-	<!-- Start BlockQuote 豊饒と情熱文字画像-->
-	<div class="blockquote main"></div>
-	<!-- End BlockQuote -->
+	</div>
+	<div class="">
+	
+		<a href="javascript:void(0);" class="scrolldown">
+			<h3 data-icon="&#xe017;" class="icon">&nbsp;MOER ABOUT US</h3>
+		</a>
+		</div>
+	<!-- End Home -->
+	
+	
+	
+<!-- Start BlockQuote 豊饒と情熱文字画像-->
+<div class="blockquote main"> </div>
+<!-- End BlockQuote --> 
+
+
 
 	<!-- Start Content -->
-	<div class="content">
-
+	<div class="content" id="topic">
 		<!-- Start HomePage Section -->
 		<div class="section full">
 			<h2>TOPICS</h2>
 			<ul class="carousel" id="carousellatest">
-
 				<!-- Start Single Block -->
 				<li>
 					<div class="section block">
@@ -149,7 +185,6 @@
 					</div>
 				</li>
 				<!-- End Single Block -->
-
 			</ul>
 		</div>
 		<!-- End HomePage Section -->
@@ -207,8 +242,8 @@
 		<!-- Start Person Block -->
 		<div class="container">
 			<div class="box2 kakuuchi-img quotefade">
-			 <img src="img/kakuuchi.png" width="100%">
-<!-- 				<div class="kakuuti">
+				<img src="img/kakuuchi.png">
+				<!-- 				<div class="kakuuti">
 					イベント日以外でも店内にて試飲できます。お気軽にどうぞ！
 					<br>
 					<span class="wide-text"> 日本酒3種 500円 時間：17時～20時 </span>
